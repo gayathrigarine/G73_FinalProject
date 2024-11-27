@@ -1,0 +1,88 @@
+
+
+.login-page {
+    background: url('C:\Users\ramak\G73_FinalProject\frontend\public\h.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .login-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Shadow for elevation */
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border for definition */
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f7f7f7;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border-color: #0052cc; 
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0052cc;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #003d99;
+  }
+  
+  button:active {
+    background-color: #002b80;
+  }
+  

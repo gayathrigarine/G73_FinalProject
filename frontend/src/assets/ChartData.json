@@ -1,0 +1,10 @@
+{
+    "technologies": [
+      { "name": "Electronic Health Records (EHRs)", "effectiveness": 85 },
+      { "name": "Computerized Physician Order Entry (CPOE)", "effectiveness": 80 },
+      { "name": "Clinical Decision Support Systems (CDSS)", "effectiveness": 75 },
+      { "name": "Remote Patient Monitoring (RPM)", "effectiveness": 70 },
+      { "name": "Telemedicine", "effectiveness": 65 }
+    ]
+  }
+  
