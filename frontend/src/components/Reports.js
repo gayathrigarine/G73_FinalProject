@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import axios from 'axios';
+import API_URL from '../config'; 
 
 const Reports = () => {
   const [data, setData] = useState([]);
@@ -14,7 +15,7 @@ const Reports = () => {
             return;
           }
   
-          const response = await axios.get('http://localhost:3000/chart4-data', {
+          const response = await axios.get(`${API_URL}/chart4-data`, {
             headers: { Authorization: `Bearer ${token}` },
           });
           const technologies = response.data.technologies;

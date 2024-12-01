@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
 import * as d3 from 'd3';
 import axios from 'axios';
+import API_URL from '../config'; 
 
 const Summary = () => {
   useEffect(() => {
     const fetchChart1Data = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:3000/chart1-data', {
+        const response = await axios.get(`${API_URL}/chart1-data`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const { labels, values } = response.data;
@@ -21,7 +22,7 @@ const Summary = () => {
     const fetchChart2Data = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:3000/chart2-data', {
+        const response = await axios.get(`${API_URL}/chart2-data`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
