@@ -171,21 +171,48 @@ const Summary = () => {
         <h3>Bar Chart</h3>
         <svg id="barChartSvg"></svg>
       </div>
+      <h1>Chart Analysis</h1>
 
-      <p>
-        This chart displays data fetched from the backend API. It represents the values for the months of January, February, and March.
-      </p>
-      <p>
-        Remote Monitoring Technologies: Wearable devices and mobile health applications enable continuous monitoring of vital signs and chronic conditions, facilitating proactive management and early detection of potential health issues.
-        Reference: <a href="https://time.com/7021731/health-care-technology-patient-safety/" target="_blank" rel="noopener noreferrer">https://time.com/7021731/health-care-technology-patient-safety/</a>
-      </p>
-      <p>
-        <strong>Technical Aspects:</strong> This project uses a decoupled architecture with a React frontend and a Node.js backend. The backend serves a RESTful API for user authentication and data. JWT is used for secure session management. The frontend is a Single Page Application (SPA) implemented with React Router for navigation. Docker is used for containerization, and CORS ensures secure communication between services.
-      </p>
+<div class="chart-container">
+    <h2>1. Summary Chart</h2>
+    <p><span class="summary">Data Overview:</span> The summary chart provides monthly data (January, February, and March), showing a consistent downward trend in values:</p>
+    <ul class="chart-analysis">
+        <li><strong>January:</strong> 85</li>
+        <li><strong>February:</strong> 80</li>
+        <li><strong>March:</strong> 75</li>
+    </ul>
+    <p><span class="summary">Analysis:</span> The decline indicates a potential decrease in performance, engagement, or another key metric over the first quarter. This could be due to seasonal factors, operational challenges, or external market conditions.</p>
+    <p><span class="summary">Key Points to Highlight:</span></p>
+    <ul class="chart-analysis">
+        <li>Investigate reasons behind the consistent decline month over month.</li>
+        <li>Identify if this trend is cyclical or specific to this time frame.</li>
+        <li>Recommend corrective measures to stabilize or reverse the trend.</li>
+    </ul>
+</div>
       <div>
         <h3>Donut Chart</h3>
         <svg id="donutChartSvg"></svg>
       </div>
+      <div class="chart-container">
+        <h2>2. Reports Chart</h2>
+        <p><span class="summary">Data Overview:</span> The reports chart summarizes the quarterly data (Q1, Q2, and Q3) with similar values:</p>
+        <ul class="chart-analysis">
+            <li><strong>Q1:</strong> 85</li>
+            <li><strong>Q2:</strong> 80</li>
+            <li><strong>Q3:</strong> 75</li>
+        </ul>
+        <p><span class="summary">Analysis:</span> The quarterly data mirrors the monthly trend observed in the summary chart. A steady decline across quarters might indicate an ongoing issue affecting performance or metrics over a more extended period.</p>
+        <p><span class="summary">Key Points to Highlight:</span></p>
+        <ul class="chart-analysis">
+            <li>Compare with the previous year's performance during similar quarters for context.</li>
+            <li>Assess if internal or external factors (e.g., resource constraints, market changes) contributed to this decline.</li>
+            <li>Develop strategies to address potential root causes, such as operational inefficiencies or customer retention challenges.</li>
+        </ul>
+    </div>
+    <div class="chart-container">
+        <h2>General Insights</h2>
+        <p>Both charts indicate a consistent decrease in values, whether viewed monthly or quarterly. This suggests a broader trend requiring attention. Key actions might include conducting a deeper analysis to pinpoint causes, implementing new strategies, or preparing contingency plans to address future impacts.</p>
+    </div>
     </div>
   );
 };

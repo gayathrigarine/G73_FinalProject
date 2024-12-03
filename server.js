@@ -18,7 +18,7 @@ const db = mysql.createConnection({
     database: 'G73_db'
 });
 const saltRounds = 10;
-const plainPassword = 'Garine';
+const plainPassword = 'Gayathri';
 db.connect((err) => {
     if (err) {
         console.error('Database connection failed:', err.stack);
@@ -28,10 +28,10 @@ db.connect((err) => {
 });
 
 const updatePasswordIfNeeded = async () => {
-    const [rows] = await db.promise().query('SELECT password FROM users WHERE username = ?', ['Garine']);
+    const [rows] = await db.promise().query('SELECT password FROM users WHERE username = ?', ['Gayathri']);
     if (!rows.length || !bcrypt.compareSync(plainPassword, rows[0].password)) {
         const hash = await bcrypt.hash(plainPassword, saltRounds);
-        db.query('UPDATE users SET password = ? WHERE username = ?', [hash, 'Garine'], (err) => {
+        db.query('UPDATE users SET password = ? WHERE username = ?', [hash, 'Gayathri'], (err) => {
             if (err) throw err;
             console.log('Password updated with hash');
         });
@@ -90,6 +90,18 @@ app.get('/chart3-data', authenticateToken, (req, res) => {
 
 app.get('/chart4-data', authenticateToken, (req, res) => {
     db.query('SELECT data FROM chartA_data WHERE chart_name = "reports_chart"', (err, results) => {
+        if (err) return res.status(500).json({ message: 'Error fetching chart data' });
+        res.json(results[0].data);
+    });
+});
+app.get('/chart5-data', authenticateToken, (req, res) => {
+    db.query('SELECT data FROM chart_data WHERE chart_name = "summary_chart1"', (err, results) => {
+        if (err) return res.status(500).json({ message: 'Error fetching chart data' });
+        res.json(results[0].data);
+    });
+});
+app.get('/chart6-data', authenticateToken, (req, res) => {
+    db.query('SELECT data FROM chart_data WHERE chart_name = "reports_chart1"', (err, results) => {
         if (err) return res.status(500).json({ message: 'Error fetching chart data' });
         res.json(results[0].data);
     });

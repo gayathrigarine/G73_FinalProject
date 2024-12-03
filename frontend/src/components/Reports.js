@@ -80,12 +80,47 @@ const Reports = () => {
     <div>
       <h2>Effectiveness of Health Technologies</h2>
       <svg id="donutChartSvg"></svg>
-      <p>
-        This chart represents the effectiveness of various health technologies based on collected data.
-      </p>
-      <p>
-        The data highlights the importance of modern health technology such as EHRs, CPOE, and telemedicine in improving patient outcomes.
-      </p>
+      <h1>Healthcare Technologies and Their Effectiveness</h1>
+
+<div class="section">
+    <h2>1. Electronic Health Records (EHRs)</h2>
+    <p><span class="effectiveness">Effectiveness:</span> 85%</p>
+    <p><strong>Overview:</strong> EHRs centralize patient data, enabling healthcare providers to access comprehensive medical histories.</p>
+    <p><strong>Impact:</strong> Streamlines workflows, reduces paperwork, and minimizes errors caused by manual record-keeping.</p>
+    <p><strong>Challenges:</strong> Implementation costs and usability concerns for healthcare staff.</p>
+</div>
+
+<div class="section">
+    <h2>2. Computerized Physician Order Entry (CPOE)</h2>
+    <p><span class="effectiveness">Effectiveness:</span> 80%</p>
+    <p><strong>Overview:</strong> CPOE systems allow physicians to enter medication and treatment orders directly into a digital system.</p>
+    <p><strong>Impact:</strong> Reduces prescription errors and ensures faster communication between departments.</p>
+    <p><strong>Challenges:</strong> Initial resistance from users and the need for seamless integration with existing systems.</p>
+</div>
+
+<div class="section">
+    <h2>3. Clinical Decision Support Systems (CDSS)</h2>
+    <p><span class="effectiveness">Effectiveness:</span> 75%</p>
+    <p><strong>Overview:</strong> CDSS aids clinicians by providing evidence-based recommendations and alerts during diagnosis or treatment.</p>
+    <p><strong>Impact:</strong> Enhances decision-making, improves patient outcomes, and supports adherence to guidelines.</p>
+    <p><strong>Challenges:</strong> Over-reliance on alerts can lead to "alert fatigue," reducing system effectiveness.</p>
+</div>
+
+<div class="section">
+    <h2>4. Remote Patient Monitoring (RPM)</h2>
+    <p><span class="effectiveness">Effectiveness:</span> 70%</p>
+    <p><strong>Overview:</strong> RPM uses wearable devices and sensors to track patient vitals and health metrics in real time.</p>
+    <p><strong>Impact:</strong> Reduces hospital readmissions and enhances chronic disease management, especially for remote or underserved areas.</p>
+    <p><strong>Challenges:</strong> Dependence on reliable internet connectivity and concerns about data privacy.</p>
+</div>
+
+<div class="section">
+    <h2>5. Telemedicine</h2>
+    <p><span class="effectiveness">Effectiveness:</span> 65%</p>
+    <p><strong>Overview:</strong> Telemedicine enables remote consultations and follow-ups via video calls, chat, or other communication tools.</p>
+    <p><strong>Impact:</strong> Increases access to healthcare for rural or underserved populations.</p>
+    <p><strong>Challenges:</strong> Limited internet access in some regions and potential technical difficulties during consultations.</p>
+</div>
     </div>
   );
 };
