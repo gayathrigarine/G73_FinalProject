@@ -13,7 +13,8 @@ const App = () => {
 
   return (
     <div className={location.pathname === '/' ? 'login-page' : 'no-background'}>
-      {location.pathname !== '/' && <Navbar />} 
+      {/* {location.pathname !== '/' && <Navbar />}  */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route

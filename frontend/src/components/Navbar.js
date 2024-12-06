@@ -15,7 +15,7 @@ const Navbar = () => {
     navigate('/dashboard');
   };
 
-  if (!token) return null;
+  // if (!token) return null;
 
   return (
     <nav className="navbar">
